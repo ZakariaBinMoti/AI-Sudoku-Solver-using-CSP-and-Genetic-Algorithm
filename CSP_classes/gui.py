@@ -55,9 +55,9 @@ class SudokuUI(Frame):
         # the default will be the board of lvl 1 and which 1
         self.__change_level()
         Label(self, text="Instructions").grid(row=1, column=61)
-        Label(self, text="1.Select Difficulty Level").grid(row=2, column=61)
-        Label(self, text="2.Select Level").grid(row=3, column=61)
-        Label(self, text="3.Select Algorithm & done!").grid(row=4, column=61)
+        # Label(self, text="1.Select Difficulty Level").grid(row=2, column=61)
+        Label(self, text="1.Select Level").grid(row=3, column=61)
+        Label(self, text="2.Select Algorithm & done!").grid(row=4, column=61)
         self.clear_button = Button(self, text="Reset", command=self.__clear_board, width=15, height=2)
         self.clear_button.grid(row=10, column=61, padx=20, columnspan=3)
         self.solve_button = Button(self, text="Solve with CSP", command=self.solve_clicked, width=15, height=2)
@@ -74,24 +74,24 @@ class SudokuUI(Frame):
         lblBT.grid(row=32, column=0)
         self.inference = StringVar()
         self.radio = []
-        self.radio.append(Radiobutton(self, text="", variable=self.inference, value="NO_INFERENCE"))
-        self.radio[0].grid(row=15, column=62, padx=2)
+        # self.radio.append(Radiobutton(self, text="", variable=self.inference, value="NO_INFERENCE"))
+        # self.radio[0].grid(row=15, column=62, padx=2)
 
         self.inference.set("NO_INFERENCE")
 
-        Label(self, text="Select Difficulty :").grid(row=18, column=61)
-        lbltime.grid(row=30, column=0)
-        lblBT.grid(row=32, column=0)
-       # self.which = IntVar()
-        self.radio2 = []
-        self.radio2.append(Radiobutton(self, text="Level 1", variable=self.which, value=0))
-        self.radio2[0].grid(row=18, column=62, padx=2)
-
-        self.radio2.append(Radiobutton(self, text="Level 2", variable=self.which, value=1))
-        self.radio2[1].grid(row=19, column=62, padx=2)
-
-        self.radio2.append(Radiobutton(self, text="Level 3", variable=self.which, value=2))
-        self.radio2[2].grid(row=20, column=62, padx=2)
+       #  Label(self, text="Select Difficulty :").grid(row=18, column=61)
+       #  lbltime.grid(row=30, column=0)
+       #  lblBT.grid(row=32, column=0)
+       # # self.which = IntVar()
+       #  self.radio2 = []
+       #  self.radio2.append(Radiobutton(self, text="Level 1", variable=self.which, value=0))
+       #  self.radio2[0].grid(row=18, column=62, padx=2)
+       #
+       #  self.radio2.append(Radiobutton(self, text="Level 2", variable=self.which, value=1))
+       #  self.radio2[1].grid(row=19, column=62, padx=2)
+       #
+       #  self.radio2.append(Radiobutton(self, text="Level 3", variable=self.which, value=2))
+       #  self.radio2[2].grid(row=20, column=62, padx=2)
 
 
 
