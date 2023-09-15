@@ -220,7 +220,7 @@ class SudokuUI(Frame):
         self.which = (self.which+1) % 3
         if self.level.get() == 1:
             if self.which == 0:
-                self.original_board[0] = [0, 6, 0, 3, 0, 0, 8, 0, 4]
+                self.original_board[0] = [0, 2, 0, 3, 0, 0, 8, 0, 4]
                 self.original_board[1] = [5, 3, 7, 0, 9, 0, 0, 0, 0]
                 self.original_board[2] = [0, 4, 0, 0, 0, 6, 0, 0, 7]
                 self.original_board[3] = [0, 9, 0, 0, 5, 0, 0, 0, 0]
